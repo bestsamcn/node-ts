@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm -rf ./dist && ts-node ./scripts/start-dev.ts"
+    "start": "rimraf ./dist && ts-node ./scripts/start-dev.ts"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,11 @@
   "homepage": "https://github.com/bestsamcn/node-ts#readme",
   "devDependencies": {
     "babel-loader": "^8.0.6",
+    "rimraf": "^2.6.3",
     "start-server-webpack-plugin": "^2.2.5",
     "ts-loader": "^6.0.4",
     "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
     "webpack": "^4.35.3",
     "webpack-node-externals": "^1.7.2"
   },
