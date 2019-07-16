@@ -85,7 +85,7 @@ class WebpackConfig implements Configuration {
                     signal: true,
 
                     //为调试留接口
-                    nodeArgs: ['--inspect-brk']
+                    // nodeArgs: ['--inspect-brk']
                 }),
             ]
             this.plugins.push(...devPlugins);

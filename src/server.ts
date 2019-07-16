@@ -9,7 +9,6 @@ server.on('listening', ()=>console.log(4000, 'port'));
 
 // 热加载
 if (module.hot) {
-	console.log('asdfasdf')
     // 监听./app.ts
     module.hot.accept('./app.ts', () => {
     	console.log('update')

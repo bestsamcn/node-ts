@@ -11,8 +11,7 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "inlineSources": false,
-        "lib": ["es2015"],
-        "outDir": "./dist"
+        "lib": ["es2015"]
     },
     "exclude": [
         "node_modules",
