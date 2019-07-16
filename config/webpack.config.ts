@@ -70,7 +70,6 @@ class WebpackConfig implements Configuration {
                     whitelist: ['webpack/hot/signal']
                 })
             );
-
             const devPlugins = [
 
                 //用来热更新
