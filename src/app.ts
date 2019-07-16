@@ -1,9 +1,11 @@
 import * as express from 'express';
-const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
 
-const createApp = ()=>app;
+const createApp = ()=>{
+	const app = express();
+	app.get('/', function (req, res) {
+	  res.send('Hello Wodddrld')
+	});
+	return app;
+};
 export default createApp;
