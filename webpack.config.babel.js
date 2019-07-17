@@ -12,12 +12,13 @@ fs.readdirSync('node_modules')
 .forEach((mod) => {
     nodeModules[mod] = 'commonjs ' + mod;
 });
+
 export default {
     cache: true,
     entry: [
         path.join(__dirname, './src/server.ts')
     ],
-    mode:'development',
+    mode:"development",
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'server.js',

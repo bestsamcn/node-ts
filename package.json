@@ -8,7 +8,7 @@
     "start:webpack": " webpack --watch --progress --config webpack.config.babel.js",
     "start:node": "nodemon dist/server.js",
     "start": "concurrently \"npm run start:webpack\" \"npm run start:node\"",
-    "build": " set NODE_ENV=production && rimraf ./dist && webpack --config webpack.config.babel.js "
+    "build": "set NODE_ENV=production && rimraf ./dist && webpack --config webpack.config.babel.js "
   },
   "repository": {
     "type": "git",
