@@ -2,13 +2,13 @@
   "name": "ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:webpack": " webpack --watch --progress --config webpack.config.babel.js",
-    "start:node": "nodemon dist/server.js",
+    "start:node": "nodemon dist/www.js",
     "start": "concurrently \"npm run start:webpack\" \"npm run start:node\"",
-    "build": "set NODE_ENV=production && rimraf ./dist && webpack --config webpack.config.babel.js "
+    "build": "set NODE_ENV=production && rimraf ./dist && webpack --config webpack.config.babel.js ",
+    "doc": "typedoc --out ./doc ./src"
   },
   "repository": {
     "type": "git",
@@ -31,15 +31,17 @@
     "babel-preset-stage-0": "^6.24.1",
     "concurrently": "^4.1.1",
     "json-loader": "^0.5.7",
+    "nodemon": "^1.19.1",
     "rimraf": "^2.6.3",
     "ts-loader": "^6.0.4",
+    "typedoc": "^0.14.2",
     "typescript": "^3.5.3",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6",
-    "webpack-node-externals": "^1.7.2",
-    "nodemon": "^1.19.1"
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-decorator": "^1.1.0"
   }
 }

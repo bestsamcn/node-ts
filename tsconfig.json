@@ -10,6 +10,7 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "inlineSources": false,
+        "experimentalDecorators": true,
         "lib": ["es2015"],
         "baseUrl":"."
     },

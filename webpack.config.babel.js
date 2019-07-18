@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 import fs from 'fs';
 import path from 'path';
-import StartServer from 'start-server-webpack-plugin';
 
 let nodeModules = {};
 
@@ -16,12 +15,12 @@ fs.readdirSync('node_modules')
 export default {
     cache: true,
     entry: [
-        path.join(__dirname, './src/server.ts')
+        path.join(__dirname, './src/www.ts')
     ],
     mode:"development",
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'server.js',
+        filename: 'www.js',
         hotUpdateChunkFilename: 'hot/hot-update.js',
         hotUpdateMainFilename: 'hot/hot-update.json'
     },
